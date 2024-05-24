@@ -1,4 +1,4 @@
-import { Content, RootLayout, Sidebar, DraggableTopBar} from "@/components"
+import { Content, RootLayout, Sidebar, DraggableTopBar, ActionButtonsRow} from "@/components"
 
 
 
@@ -10,6 +10,7 @@ const App = () => {
       <DraggableTopBar/>
       <RootLayout>
         <Sidebar className="p- text-black">
+        <ActionButtonsRow className="flex justify-between mt-1" />
           SideBar
         </Sidebar>
 
