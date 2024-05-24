@@ -1,10 +1,14 @@
-import electronLogo from './assets/electron.svg'
+
 
 function App(): JSX.Element {
   const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
 
   return (
-    <div></div>
+    <div className="flex h-full items-center justify-center">
+      <span className="text-4xl text-blue-500">
+        Hello from Electron
+      </span>
+    </div>
   )
 }
 
