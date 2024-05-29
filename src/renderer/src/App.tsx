@@ -1,4 +1,5 @@
-import { Content, RootLayout, Sidebar, DraggableTopBar, ActionButtonsRow, NotePreviewList,NotePreview} from "@/components"
+import { Content, RootLayout, Sidebar, DraggableTopBar, ActionButtonsRow, NotePreviewList,} from "@/components"
+import MarkdownEditor from "./components/MarkdownEditor"
 
 
 
@@ -15,7 +16,7 @@ const App = () => {
         </Sidebar>
 
         <Content className="border-l bg-zinc-900/50 border-l-white/20">
-          Content
+          <MarkdownEditor></MarkdownEditor>
         </Content>
       </RootLayout>
     </>
